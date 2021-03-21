@@ -147,8 +147,7 @@ div > .header-link:focus {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid tomato;
-}
+  }
 
 /* Hero-Button */
 .hero-section .button {
