@@ -229,13 +229,16 @@ div > .header-link:focus {
   width: 1px !important;
   overflow: hidden;
 }
+.advantage-section{
+  padding-top: 94px;
+}
 
 .advantage-section .list {
   font-weight: 700;
-  margin-top: 94px;
-    display: flex;
-  /* justify-content: space-between; */
+  padding-bottom: 0;
+  display: flex;
 }
+  
 .advantage-section .adv-item {
   min-width: 270px;
 }
@@ -250,7 +253,6 @@ div > .header-link:focus {
 
 /* Activity-section */
 .section-title {
-  padding-top: 94px;
   padding-bottom: 20px;
   text-align: center;
   font-weight: 700;
@@ -275,7 +277,6 @@ div > .header-link:focus {
 
 /* Team-section */
 .team-title {
-  padding-top: 94px;
   padding-bottom: 20px;
   text-align: center;
   font-weight: 700;
@@ -296,7 +297,6 @@ div > .header-link:focus {
   display: flex;
   margin-left: -30px;
   margin-top: -30px;
-  margin-bottom: 94px;
   align-items: center;
 }
 .grid-item {
@@ -310,7 +310,6 @@ div > .header-link:focus {
 }
 
 .team-list .team-member {
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 .team-list p{
@@ -346,6 +345,11 @@ div > .header-link:focus {
 .portfolio-title {
   display: flex;
   flex-wrap: wrap;
+}
+
+.section{
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .flex-elements {
   box-sizing: border-box;
