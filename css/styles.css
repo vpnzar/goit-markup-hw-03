@@ -94,10 +94,10 @@ p {
 
 /* Header-Navigation */
 .page-header .logo {
-  margin-right: 93px;
   align-items: center;
   padding-top: 24px;
   padding-bottom: 25px;
+  margin-right: 93px;
 }
 
 .page-header .container {
@@ -109,6 +109,13 @@ p {
 .page-header{
   border-bottom: 1px solid var(--header-line-color);
 }
+
+.header-nav {
+  display: flex;
+  min-width: 294px;
+  padding-left: 0;
+}
+
 
 .header-nav a:hover,
 .header-nav a:focus {
@@ -125,10 +132,28 @@ p {
 }
 
 .menu-item{
-  display: inline-flex;
+  display: block;
+}
+
+.menu-item.link{
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-decoration: none;
+  list-style: none;
+}
+
+
+/* Header-Link */
+
+.header-block-link{
+  display:flex;
 }
 
 .header-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--paragraph-text-color);
   font-weight: 500;
   font-style: normal;
@@ -137,8 +162,9 @@ p {
 }
 
 .header-link:not(:last-child) {
-  padding-right: 50px;
+  margin-right: 50px;
 }
+
 div > .header-link:hover,
 div > .header-link:focus {
   color: var(--accent-color);
@@ -256,6 +282,10 @@ div > .header-link:focus {
   font-size: 14px;
   margin: 0;
   margin-bottom: 10px;
+ }
+
+ .header-nav.link{
+   margin: 0;
  }
 
 .adv-item p {
