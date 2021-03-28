@@ -111,8 +111,10 @@ p {
 }
 
 .header-nav {
-  display: flex;
+  display: block;
   min-width: 294px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   padding-left: 0;
 }
 
@@ -132,13 +134,10 @@ p {
 }
 
 .menu-item{
-  display: block;
+  display: inline-flex;
 }
 
 .menu-item.link{
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
   text-decoration: none;
   list-style: none;
 }
@@ -245,6 +244,7 @@ div > .header-link:focus {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
@@ -401,8 +401,11 @@ div > .header-link:focus {
 }
 
 .portfolio-button .button {
-  margin-right: 8px;
   padding: 6px 22px;
+}
+
+.btn-item:not(:last-child){
+  margin-right: 8px;
 }
 
 .section{
@@ -441,9 +444,9 @@ address .contact-link {
   font-style: normal;
   text-decoration: none;
   list-style: none;
-  padding-top: 9px;
+  margin-top: 9px;
   display: block
-}
+  }
 
 address > p {
   color: var(--section-accent-color);
@@ -451,7 +454,8 @@ address > p {
 }
 
 .address {
-  max-width: 230px;
+  display: block;
+  max-width: 231px;
   margin-top: 20px;
 }
 
